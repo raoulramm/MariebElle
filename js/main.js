@@ -85,20 +85,24 @@
     });
 
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
+    // Project and Testimonial carousel
+    $(".project-carousel, .testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
-        center: true,
-        margin: 24,
-        dots: true,
+        margin: 25,
         loop: true,
-        nav : false,
+        center: true,
+        dots: false,
+        nav: true,
+        navText : [
+            '<i class="bi bi-chevron-left" style="color:grey"></i>',
+            '<i class="bi bi-chevron-right" style="color:grey"></i>'
+        ],
         responsive: {
-            0:{
+			0:{
                 items:1
             },
-			576:{
+            576:{
                 items:1
             },
             768:{
@@ -109,7 +113,5 @@
             }
         }
     });
-
     
 })(jQuery);
-

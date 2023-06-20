@@ -1,4 +1,4 @@
-/********** Template CSS **********/
+
 :root {
     --primary: #355EFC;
     --secondary: #E93C05;
@@ -220,43 +220,11 @@ h6,
 }
 
 
-/*** Facts ***/
-.facts {
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
-}
 
 
-/*** Callback ***/
-.callback {
-    position: relative;
-}
-
-.callback::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 50%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
-    z-index: -1;
-}
 
 
-/*** Feature ***/
-.feature .feature-box,
-.feature .feature-box * {
-    transition: .5s;
-}
 
-.feature .feature-box:hover {
-    background: var(--primary);
-    border-color: var(--primary) !important;
-}
-
-.feature .feature-box:hover * {
-    color: #FFFFFF !important;
-}
 
 
 /*** Service ***/
@@ -278,227 +246,8 @@ h6,
 }
 
 
-/*** Project ***/
-.project-item,
-.project-item .project-img {
-    position: relative;
-}
-
-.project-item .project-img a {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    opacity: 0;
-    transition: .5s;
-}
-
-.project-item:hover .project-img a {
-    opacity: 1;
-}
-
-.project-item .project-title {
-    position: absolute;
-    top: 3rem;
-    right: 0;
-    bottom: 0;
-    left: 3rem;
-    border: 1px solid var(--light);
-    border-radius: 8px;
-    display: flex;
-    align-items: flex-end;
-    padding: 18px;
-    z-index: -1;
-    transition: .5s;
-}
-
-.project-item:hover .project-title {
-    background: var(--primary);
-    border-color: var(--primary);
-}
-
-.project-item .project-title h4 {
-    transition: .5s;
-}
-
-.project-item:hover .project-title h4 {
-    color: #FFFFFF;
-}
-
-.project-carousel .owl-nav {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-.project-carousel .owl-nav .owl-prev,
-.project-carousel .owl-nav .owl-next {
-    margin: 0 12px;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary);
-    background: var(--light);
-    border-radius: 45px;
-    font-size: 22px;
-    transition: .5s;
-}
-
-.project-carousel .owl-nav .owl-prev:hover,
-.project-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
-    color: var(--light);
-}
 
 
-/*** Team ***/
-.team-item {
-    position: relative;
-    padding: 4rem 0;
-}
-
-.team-item img {
-    position: relative;
-    z-index: 2;
-}
-
-.team-item .team-text {
-    position: absolute;
-    top: 0;
-    right: 3rem;
-    bottom: 0;
-    left: 3rem;
-    padding: 15px;
-    border: 1px solid var(--light);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    transition: .5s;
-    z-index: 1;
-}
-
-.team-item:hover .team-text {
-    background: var(--primary);
-    border-color: var(--primary);
-}
-
-.team-item .team-text h4 {
-    transition: .5s;
-}
-
-.team-item:hover .team-text h4 {
-    color: #FFFFFF;
-}
-
-.team-item .team-social .btn {
-    background: var(--light);
-    color: var(--primary);
-}
-
-.team-item:hover .team-social .btn {
-    background: #FFFFFF;
-}
-
-.team-item .team-social .btn:hover {
-    background: var(--primary);
-    color: var(--light);
-}
-
-
-/*** Testimonial ***/
-.testimonial-item {
-    position: relative;
-    text-align: center;
-    padding-top: 30px;
-}
-
-.testimonial-item .testimonial-text {
-    position: relative;
-    text-align: center;
-}
-
-.testimonial-item .testimonial-text .btn-square {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.testimonial-item .testimonial-text::before {
-    position: absolute;
-    content: "";
-    bottom: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 30px solid;
-    border-color: var(--light) transparent transparent transparent;
-}
-
-.testimonial-item .testimonial-text::after {
-    position: absolute;
-    content: "";
-    bottom: -59px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 30px solid;
-    border-color: #FFFFFF transparent transparent transparent;
-}
-
-.testimonial-carousel .owl-item img {
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-}
-
-.testimonial-carousel .owl-dots {
-    margin-top: 25px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid var(--light);
-    border-radius: 30px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot::after {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    top: 6px;
-    left: 6px;
-    border-radius: 16px;
-    background: var(--light);
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-    border-color: var(--primary);
-}
-
-.testimonial-carousel .owl-dot.active::after {
-    background: var(--primary);
-}
 
 
 /*** Footer ***/
@@ -625,9 +374,134 @@ h6,
     color: blue;
   }
 
-/*the picyture section*/
+/*the picture section*/
   .bg-call-to-action {
     background: url(/img/call.jpg) no-repeat;
     background-size: cover;
    
+}
+
+
+/*** Testimonial ***/
+.testimonial-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    transition: .5s;
+}
+
+.owl-item .testimonial-item,
+.testimonial-item * {
+    transition: .5s;
+}
+
+.owl-item.center .testimonial-item,
+.testimonial-item:hover {
+    background: var(--primary);
+}
+
+.owl-item.center .testimonial-item *,
+.testimonial-item:hover * {
+    color: #FFFFFF !important;
+}
+
+.testimonial-item img {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 100px;
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    display: flex;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    margin-left: 15px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    border-radius: 55px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .15);
+    font-size: 25px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    background: var(--primary);
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .testimonial-carousel .owl-nav {
+        top: -70px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .testimonial-carousel .owl-nav .owl-prev,
+    .testimonial-carousel .owl-nav .owl-next {
+        margin: 0 7px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+}
+
+
+/* --------- download  ---------- */
+
+.download-area {
+    overflow: hidden;
+}
+
+.download-area .download-image .download-shape-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #b3d7ff;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.download-area .download-image .image-3 {
+    position: relative;
+    max-width: 350px;
+    padding-top: 65px;
+    padding-left: 60px;
+    padding-bottom: 60px;
+}
+
+.download-content ul {
+    margin-top: 35px;
+}
+
+.download-content ul li {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.download-content ul li a {
+    width: 210px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: -15px 10px 30px 0 rgb(0 0 0 / 30%);
+}
+
+.download-content ul li a.app-store {
+    margin-right: 28px;
+    background-color: #0898e7;
+}
+
+.download-content ul li a.play-store {
+    background-color: #525a63;
 }
